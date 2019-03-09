@@ -15,18 +15,13 @@ class TableViewCell: UITableViewCell {
     @IBOutlet weak var CellImage: UIImageView!
     
     
-    func setCell (personalizzata: Cella) {
-        title.text = personalizzata.title
-        bodyText.text = personalizzata.bodyMessage
-        CellImage.image = personalizzata.image
+    func setCell(cellFormatTaken: Cella) {
+        
+        title.text = cellFormatTaken.title
+        bodyText.text = cellFormatTaken.bodyMessage
+        CellImage.image = cellFormatTaken.image
         
     }
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-        }
-    
 }
 
     

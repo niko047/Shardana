@@ -16,10 +16,12 @@ class Cella {
     var bodyMessage : String
     
     
-    public init(image : UIImage, title : String, bodyMessage: String) {
+    init(image : UIImage, title : String, bodyMessage: String) {
+        
         self.image = image
         self.title = title
         self.bodyMessage = bodyMessage
+        
     }
     
 }
