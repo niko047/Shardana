@@ -14,7 +14,6 @@ class TableViewCell: UITableViewCell {
     @IBOutlet weak var bodyText: UILabel!
     @IBOutlet weak var CellImage: UIImageView!
     
-    
     func setCell(cellFormatTaken: Cella) {
         
         title.text = cellFormatTaken.title

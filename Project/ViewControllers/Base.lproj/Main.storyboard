@@ -68,11 +68,69 @@
                     <navigationItem key="navigationItem" id="dle-W2-83e"/>
                     <connections>
                         <outlet property="UITableView" destination="Kpy-ey-4bI" id="l7t-oZ-yke"/>
+                        <segue destination="FFz-ss-SAt" kind="show" identifier="showSellerPage" id="Qdb-ga-vRG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HkC-Hg-Qk3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1276" y="26.53673163418291"/>
+        </scene>
+        <!--View Controller Display-->
+        <scene sceneID="n7P-EJ-oQS">
+            <objects>
+                <viewController storyboardIdentifier="ViewControllerDisplay" id="FFz-ss-SAt" customClass="ViewControllerDisplay" customModule="Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SHX-pL-yvL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qnl-TG-1tC">
+                                <rect key="frame" x="50" y="124" width="275" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="UXN-ME-aWS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gKW-59-GgD">
+                                <rect key="frame" x="100" y="222" width="175" height="140"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="140" id="8br-m9-kIu"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Descriptio " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dKw-S5-EdC">
+                                <rect key="frame" x="50" y="447" width="275" height="140"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="140" id="x26-vd-DNj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="dKw-S5-EdC" firstAttribute="leading" secondItem="yxt-IC-frv" secondAttribute="leading" constant="50" id="0TF-xi-JQq"/>
+                            <constraint firstItem="Qnl-TG-1tC" firstAttribute="top" secondItem="yxt-IC-frv" secondAttribute="top" constant="60" id="1bc-ih-xbG"/>
+                            <constraint firstItem="yxt-IC-frv" firstAttribute="trailing" secondItem="dKw-S5-EdC" secondAttribute="trailing" constant="50" id="7Kb-CS-L9s"/>
+                            <constraint firstItem="dKw-S5-EdC" firstAttribute="top" secondItem="gKW-59-GgD" secondAttribute="bottom" constant="85" id="90I-GV-Trw"/>
+                            <constraint firstItem="Qnl-TG-1tC" firstAttribute="leading" secondItem="yxt-IC-frv" secondAttribute="leading" constant="50" id="NWT-aB-98I"/>
+                            <constraint firstItem="yxt-IC-frv" firstAttribute="trailing" secondItem="Qnl-TG-1tC" secondAttribute="trailing" constant="50" id="SDa-0G-owt"/>
+                            <constraint firstItem="gKW-59-GgD" firstAttribute="top" secondItem="Qnl-TG-1tC" secondAttribute="bottom" constant="77" id="ekg-Iy-GXx"/>
+                            <constraint firstItem="yxt-IC-frv" firstAttribute="trailing" secondItem="gKW-59-GgD" secondAttribute="trailing" constant="100" id="iZA-G3-PYs"/>
+                            <constraint firstItem="gKW-59-GgD" firstAttribute="leading" secondItem="yxt-IC-frv" secondAttribute="leading" constant="100" id="kRI-XZ-p8v"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="yxt-IC-frv"/>
+                    </view>
+                    <connections>
+                        <outlet property="descriptionOutlet" destination="dKw-S5-EdC" id="OLd-Oq-d8w"/>
+                        <outlet property="imageOutlet" destination="gKW-59-GgD" id="uJD-tn-FVM"/>
+                        <outlet property="titleOutlet" destination="Qnl-TG-1tC" id="Lp0-bE-322"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hhq-KE-nJN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2011" y="30"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="O0b-6Q-Qjc">

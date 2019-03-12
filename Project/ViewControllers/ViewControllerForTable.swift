@@ -10,6 +10,20 @@ import UIKit
 
 class ViewControllerForTable: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let currentCell = tableView.cellForRow(at: indexPath) as! TableViewCell
+        
+        let information = Information(title: currentCell.title.text!, description: currentCell.bodyText.text!, sellerImage: currentCell.CellImage.image!)
+        
+        let destinationVC = self.storyboard?.instantiateViewController(withIdentifier: "ViewControllerDisplay") as! ViewControllerDisplay
+        
+        destinationVC.dataPassed = information
+        
+        self.navigationController?.pushViewController(destinationVC, animated: true)
+    }
+    
+    
     @IBOutlet weak var UITableView: UITableView!
     
     
@@ -83,5 +97,6 @@ class ViewControllerForTable: UIViewController, UITableViewDataSource, UITableVi
         return cellObject
         
     }
+    
     
 }
