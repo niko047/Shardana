@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5426F03B223908030092AD2A /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5426F03A223908030092AD2A /* InitialViewController.swift */; };
+		5426F03D22390A590092AD2A /* ViewControllerSeller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5426F03C22390A590092AD2A /* ViewControllerSeller.swift */; };
 		5442D341223197C600240F89 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5442D340223197C600240F89 /* AppDelegate.swift */; };
 		5442D343223197C600240F89 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5442D342223197C600240F89 /* ViewController.swift */; };
 		5442D346223197C600240F89 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5442D344223197C600240F89 /* Main.storyboard */; };
@@ -22,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5426F03A223908030092AD2A /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
+		5426F03C22390A590092AD2A /* ViewControllerSeller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerSeller.swift; sourceTree = "<group>"; };
 		5442D33D223197C600240F89 /* Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5442D340223197C600240F89 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5442D342223197C600240F89 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -101,6 +105,8 @@
 		5442D36522345B6000240F89 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				5426F03A223908030092AD2A /* InitialViewController.swift */,
+				5426F03C22390A590092AD2A /* ViewControllerSeller.swift */,
 				5442D342223197C600240F89 /* ViewController.swift */,
 				5442D36322345B5800240F89 /* ViewControllerDisplay.swift */,
 				5442D35922319DD100240F89 /* ViewControllerForTable.swift */,
@@ -184,6 +190,8 @@
 				5442D343223197C600240F89 /* ViewController.swift in Sources */,
 				5442D3602234575E00240F89 /* Information.swift in Sources */,
 				5442D3572231980A00240F89 /* TableViewCell.swift in Sources */,
+				5426F03D22390A590092AD2A /* ViewControllerSeller.swift in Sources */,
+				5426F03B223908030092AD2A /* InitialViewController.swift in Sources */,
 				5442D36422345B5800240F89 /* ViewControllerDisplay.swift in Sources */,
 				5442D349223197C600240F89 /* Project.xcdatamodeld in Sources */,
 				5442D35A22319DD100240F89 /* ViewControllerForTable.swift in Sources */,

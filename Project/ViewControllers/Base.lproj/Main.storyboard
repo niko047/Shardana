@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kRL-KM-j7x">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,6 +10,66 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Initial View Controller-->
+        <scene sceneID="7vd-hu-hpY">
+            <objects>
+                <viewController id="DEE-Kj-0as" customClass="InitialViewController" customModule="Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PJv-Jw-gih">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PPb-gM-hzC">
+                                <rect key="frame" x="100" y="357" width="175" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="BrX-Xu-l0d"/>
+                                </constraints>
+                                <state key="normal" title="Seller"/>
+                                <connections>
+                                    <segue destination="FFx-kM-d5E" kind="show" id="i6o-gW-WCU"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shardanaLogo" translatesAutoresizingMaskIntoConstraints="NO" id="Ide-G8-SoJ">
+                                <rect key="frame" x="65" y="124" width="245" height="216"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="216" id="r8h-B0-vv7"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JGk-Ew-Zro">
+                                <rect key="frame" x="100" y="447" width="175" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="vGp-0y-Wfo"/>
+                                </constraints>
+                                <state key="normal" title="Visitor"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="cMB-i4-A6z"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="oe1-hI-3p7" firstAttribute="trailing" secondItem="JGk-Ew-Zro" secondAttribute="trailing" constant="100" id="7u9-t4-47J"/>
+                            <constraint firstItem="oe1-hI-3p7" firstAttribute="bottom" secondItem="JGk-Ew-Zro" secondAttribute="bottom" constant="190" id="9Vn-zv-bn5"/>
+                            <constraint firstItem="oe1-hI-3p7" firstAttribute="trailing" secondItem="Ide-G8-SoJ" secondAttribute="trailing" constant="65" id="Ehy-ZQ-jfr"/>
+                            <constraint firstItem="Ide-G8-SoJ" firstAttribute="leading" secondItem="oe1-hI-3p7" secondAttribute="leading" constant="65" id="U4E-Hm-fHa"/>
+                            <constraint firstItem="Ide-G8-SoJ" firstAttribute="top" secondItem="oe1-hI-3p7" secondAttribute="top" constant="60" id="Wh9-R5-4Ht"/>
+                            <constraint firstItem="JGk-Ew-Zro" firstAttribute="leading" secondItem="oe1-hI-3p7" secondAttribute="leading" constant="100" id="bJC-VC-YSU"/>
+                            <constraint firstItem="PPb-gM-hzC" firstAttribute="leading" secondItem="oe1-hI-3p7" secondAttribute="leading" constant="100" id="bku-J9-90o"/>
+                            <constraint firstItem="oe1-hI-3p7" firstAttribute="trailing" secondItem="PPb-gM-hzC" secondAttribute="trailing" constant="100" id="iLV-Nd-sZD"/>
+                            <constraint firstItem="JGk-Ew-Zro" firstAttribute="top" secondItem="PPb-gM-hzC" secondAttribute="bottom" constant="60" id="qSK-2h-6di"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="oe1-hI-3p7"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="7F8-ss-w6I"/>
+                    <connections>
+                        <outlet property="sellerButton" destination="PPb-gM-hzC" id="lih-Yy-k2k"/>
+                        <outlet property="shardanaLogo" destination="Ide-G8-SoJ" id="apn-Tx-p0M"/>
+                        <outlet property="visitorButton" destination="JGk-Ew-Zro" id="yOS-Wu-Jqf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QRc-1n-Ufe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-522" y="29"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -23,7 +83,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Shardana NE"/>
                                 <connections>
-                                    <segue destination="LeU-FK-41s" kind="show" identifier="shardanaTappedNE" id="IvP-Uq-pe6"/>
+                                    <segue destination="dhI-g8-0rk" kind="show" id="5LX-lz-baq"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -33,7 +93,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-432.80000000000001" y="26.53673163418291"/>
+            <point key="canvasLocation" x="426" y="448"/>
         </scene>
         <!--View Controller For Table-->
         <scene sceneID="8Iw-EX-gnE">
@@ -73,7 +133,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HkC-Hg-Qk3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1276" y="26.53673163418291"/>
+            <point key="canvasLocation" x="1295" y="448"/>
         </scene>
         <!--View Controller Display-->
         <scene sceneID="n7P-EJ-oQS">
@@ -130,28 +190,84 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hhq-KE-nJN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2011" y="30"/>
+            <point key="canvasLocation" x="2166" y="448"/>
+        </scene>
+        <!--View Controller Seller-->
+        <scene sceneID="XJk-kL-7w4">
+            <objects>
+                <viewController id="FFx-kM-d5E" customClass="ViewControllerSeller" customModule="Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ATL-z3-RcG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please pick the image to be used" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="esa-7K-ANu">
+                                <rect key="frame" x="50" y="108" width="275" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Wg0-JQ-iH7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VcZ-93-GCe">
+                                <rect key="frame" x="265" y="207" width="22" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="22" id="RZn-Cz-i4G"/>
+                                    <constraint firstAttribute="height" constant="22" id="pNV-fg-tJa"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="buttonPickerPressed:" destination="FFx-kM-d5E" eventType="touchUpInside" id="IkB-A5-CnE"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mga-LL-7yF">
+                                <rect key="frame" x="50" y="162" width="151" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="mWn-ik-ikA"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="esa-7K-ANu" firstAttribute="top" secondItem="amV-Cf-XXT" secondAttribute="top" constant="44" id="1Xr-wa-oXI"/>
+                            <constraint firstItem="VcZ-93-GCe" firstAttribute="top" secondItem="esa-7K-ANu" secondAttribute="bottom" constant="78" id="VZX-Rl-da3"/>
+                            <constraint firstItem="esa-7K-ANu" firstAttribute="leading" secondItem="amV-Cf-XXT" secondAttribute="leading" constant="50" id="Wy2-Yw-69M"/>
+                            <constraint firstItem="mga-LL-7yF" firstAttribute="top" secondItem="esa-7K-ANu" secondAttribute="bottom" constant="33" id="cFD-7c-Eh8"/>
+                            <constraint firstItem="VcZ-93-GCe" firstAttribute="leading" secondItem="mga-LL-7yF" secondAttribute="trailing" constant="64" id="jMv-Nz-cgG"/>
+                            <constraint firstItem="amV-Cf-XXT" firstAttribute="trailing" secondItem="esa-7K-ANu" secondAttribute="trailing" constant="50" id="kcZ-5v-6oF"/>
+                            <constraint firstItem="mga-LL-7yF" firstAttribute="leading" secondItem="amV-Cf-XXT" secondAttribute="leading" constant="50" id="lVS-qw-brP"/>
+                            <constraint firstItem="VcZ-93-GCe" firstAttribute="leading" secondItem="amV-Cf-XXT" secondAttribute="leading" constant="265" id="rWD-qq-JON"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="amV-Cf-XXT"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageToBeDisplayed" destination="mga-LL-7yF" id="SF0-GL-qyB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9JJ-N1-iHa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="421.60000000000002" y="-282.00899550224892"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="O0b-6Q-Qjc">
+        <scene sceneID="5W3-ig-33L">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="LeU-FK-41s" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="kRL-KM-j7x" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="pFq-U0-Hgz">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="KlQ-t9-Icg">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="dhI-g8-0rk" kind="relationship" relationship="rootViewController" id="uT1-SP-Ts6"/>
+                        <segue destination="DEE-Kj-0as" kind="relationship" relationship="rootViewController" id="9T0-Ms-3BI"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="K5S-Tn-hfm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yJw-wU-D7w" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="336.80000000000001" y="26.53673163418291"/>
+            <point key="canvasLocation" x="-1519" y="27"/>
         </scene>
     </scenes>
     <resources>
         <image name="Shardana NE" width="248" height="498"/>
+        <image name="shardanaLogo" width="516.75" height="440.25"/>
     </resources>
 </document>
